@@ -191,14 +191,6 @@ nav img{
 }
 
 /*---------- INDEX CONTENT --------*/
-
-.home-content{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-
 h1{
     font-size: 36px;
     font-weight: 600;
@@ -218,16 +210,6 @@ p{
     display: flex;
     justify-content: space-between;  
 }
-  
-.content-col{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    
-    transition: .5s;
-}
 
 h3{
     text-align: center;
@@ -235,16 +217,11 @@ h3{
     margin: 10px 0;
 }
 
-.content-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-
 @media (max-width:700px){
     .row{
         flex-direction: column;
     }
 } 
-
 /*--------------- BLOG--------------*/
 
 .blog{
@@ -276,7 +253,9 @@ h3{
     text-align: left;
 }
 
-
+.blog-col a{
+    text-decoration: none;
+}
 /*--------------- ABOUT US --------------*/
 .sub-header{
     height: 50vh;
@@ -338,6 +317,86 @@ h3{
 
 .about-col img{
     width: 100%;
+    border-radius: 10px;
+}
+
+/* section */
+.support {
+  padding: 5rem 0;
+}
+
+.support-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
+.support-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+/*
+=============== 
+Services
+===============
+*/
+.service {
+  background: white;
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.service .underline {
+  width: 3rem;
+  height: 0.12rem;
+  transition: all 0.3s linear;
+}
+.service p {
+  transition: all 0.3s linear;
+}
+.service:hover {
+  background: rgb(207, 161, 74);
+  color: black;
+}
+.service:hover p {
+  color: white;
+}
+.service:hover .underline {
+  background: orangered;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+@media screen and (min-width: 676px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .services-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /*--------------- CONTACT US --------------*/
